@@ -1,0 +1,16 @@
+.footer-container{
+    background-color: black;
+    height: 20rem;
+    flex-direction: column;
+
+    &__logo{
+        width: 12rem;
+    }
+
+    &__text{
+        color: white;
+        font-size: 2rem;
+        margin-top: 1rem;
+
+    }
+}

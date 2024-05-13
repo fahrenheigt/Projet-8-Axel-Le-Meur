@@ -6,6 +6,7 @@ import About from "./pages/About/About";
 import Logement from "./pages/Logement/Logement";
 import Header from "./components/Header/Header";
 import Banner from "./components/Banner/Banner";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="*" element={<Error />} />
       </Routes>
     </div>
+    <Footer />
   </div>
   );
 }

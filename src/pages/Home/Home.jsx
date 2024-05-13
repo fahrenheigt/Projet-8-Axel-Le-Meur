@@ -13,7 +13,7 @@ export default function Home() {
     })
 
     return (
-        <div className='card-container grey-bg'>
+        <div className='card-container grey-bg p-16 my-10 rounded-lg'>
             <div className='flex-col-3 w-100'>
                 {
                     data.logements.map((logement) => {

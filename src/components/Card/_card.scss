@@ -2,7 +2,6 @@
 
 
     &__card{
-        border-radius: 0.6rem;
         padding-top: 100%;
         width: 100%;
         height: 0;
@@ -25,18 +24,5 @@
         &__card {
             padding-top: 30%;
         }
-    }
-}
-
-.link {
-    display: inline-block;
-    text-decoration: none !important;
-    color: white;
-    position: relative;
-    bottom: 2rem;
-    left: 1rem;
-
-    &:focus, &:hover, &:visited, &:link, &:active {
-        text-decoration: none !important;
     }
 }

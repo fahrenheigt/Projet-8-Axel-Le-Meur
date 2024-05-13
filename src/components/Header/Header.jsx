@@ -3,16 +3,14 @@ import logo from '../../assets/images/logo.svg';
 
 export default function Header() {
 return(
-    <div className="flex flex-row space-between grow px-10">
+    <div className="header flex flex-row space-between grow mx-20">
         <div>
-            <img src={logo} alt="" />
+            <img src={logo} alt="Kasa logo header" />
         </div>
-        <div>
-            <div className="flex space-between gap-6 text-2xl ">
-                <a href="/">Accueil</a>
-                <a href="/about">A propos</a>
+            <div className="header__nav flex flex-center space-between gap-6 text-2xl ">
+                <a className="header__nav__link text-3xl" href="/">Accueil</a>
+                <a className="header__nav__link text-3xl" href="/about">A Propos</a>
             </div>
-        </div>
     </div>
 );
 }
