@@ -13,12 +13,14 @@ export default function Home() {
     })
 
     return (
-        <div className='flex-col-3'>
-            {
-                data.logements.map((logement) => {
-                    return (<Card key={logement.id} logement={logement}/>);
-                })
-            }
+        <div className='card-container grey-bg'>
+            <div className='flex-col-3 w-100'>
+                {
+                    data.logements.map((logement) => {
+                        return (<Card key={logement.id} logement={logement}/>);
+                    })
+                }
+            </div>
         </div>
     );
 }

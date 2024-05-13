@@ -2,4 +2,14 @@
 @import './_mixins.scss';
 @import './_base.scss';
 @import './_common.scss';
+@import'../../components/Banner/_banner.scss';
 @import'../../components/Card/_card.scss';
+
+.app {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    margin: 0px 5rem 0px 5rem;
+}

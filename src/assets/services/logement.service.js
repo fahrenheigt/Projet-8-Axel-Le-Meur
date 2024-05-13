@@ -1,5 +1,5 @@
 export async function getLogements() {
-    let response = await fetch('http://localhost:5174/public/logements.json');
+    let response = await fetch('http://localhost:5173/logements.json');
 
     if (!response.ok) {
 		throw new Error(`HTTP error! status: ${response.status}`);
@@ -9,7 +9,7 @@ export async function getLogements() {
 }  
 
 export async function getLogement(id) {
-    let response = await fetch('http://localhost:5174/public/logements.json');
+    let response = await fetch('http://localhost:5173/logements.json');
 
     if (!response.ok) {
 		throw new Error(`HTTP error! status: ${response.status}`);

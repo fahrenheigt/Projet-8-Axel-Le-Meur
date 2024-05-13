@@ -1,0 +1,22 @@
+.banner{
+    background-image: url("../../assets/images/background-banner.png"); 
+    justify-content: center;
+    align-items: center;
+
+
+    &__title{
+        font-size: 5rem;
+        font-weight: 700;
+        color: white;
+    }
+
+    width: 1240px;
+    height: 223px;
+    top: 163px;
+    left: 100px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+
+}
+

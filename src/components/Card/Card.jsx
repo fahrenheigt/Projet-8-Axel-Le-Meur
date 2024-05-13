@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 export default function Card({logement}) {
     return (
-        <div className="card" style={getBackgroundImage(logement.cover)}>
-            <a className="link text-2xl bold" href={`/logement/${logement.id}`}>
+        <div className="card-container__card" style={getBackgroundImage(logement.cover)}>
+            <a className="card-container__card__link text-sm bold" href={`/logement/${logement.id}`}>
                 {logement.title}
             </a>
         </div>
