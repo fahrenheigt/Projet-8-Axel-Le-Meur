@@ -725,8 +725,15 @@
   border-radius: 1.5rem;
 }
 
-.banner {
+.home-bg {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../../assets/images/background-banner.png");
+}
+
+.about-bg {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../../assets/images/about-background.png");
+}
+
+.home-bg, .about-bg {
   justify-content: center;
   align-items: center;
   backdrop-filter: brightness(10%);
@@ -736,7 +743,7 @@
   height: 20rem;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
-.banner__title {
+.home-bg .banner__title, .about-bg .banner__title {
   font-size: 5rem;
   font-weight: 700;
   color: white;
