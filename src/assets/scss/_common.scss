@@ -26,6 +26,7 @@
     .h-30{ height: 30%; }
     .h-20{ height: 20%; }
     .h-10{ height: 10%; }
+    .h-0{ height: 0; }
 // #endregion
 
 // #region Max width utilities
@@ -71,6 +72,9 @@
     .flex-center { justify-content: center; align-items: center;  }
     .flex-start { justify-content: flex-start; }
     .flex-end { justify-content: flex-end; }
+    .self-center { align-self: center;  }
+    .self-start { align-self: self-start; }
+    .self-end { align-self: self-end; }
 
     .grow { flex-grow: 1; }
 
@@ -91,7 +95,36 @@
     .gap-15 { gap: 3.75rem; }
     .gap-16 { gap: 4rem; }
 
+    .stretch { align-self: stretch; }
+
 // #endregion
+
+// #region Position utilities
+
+    .relative { position: relative; }
+    .l-1 { left: 1rem; }
+    .l-2 { left: 2rem; }
+    .l-3 { left: 3rem; }
+    .l-4 { left: 4rem; }
+    .l-5 { left: 5rem; }
+    .l-6 { left: 6rem; }
+    .l-7 { left: 7rem; }
+    .l-8 { left: 8rem; }
+    .l-9 { left: 9rem; }
+    .l-10 { left: 10rem; }
+    
+    .r-1 { right: 1rem; }
+    .r-2 { right: 2rem; }
+    .r-3 { right: 3rem; }
+    .r-4 { right: 4rem; }
+    .r-5 { right: 5rem; }
+    .r-6 { right: 6rem; }
+    .r-7 { right: 7rem; }
+    .r-8 { right: 8rem; }
+    .r-9 { right: 9rem; }
+    .r-10 { right: 10rem; }
+
+// #endregion 
 
 // #region Paddings
 
@@ -189,26 +222,68 @@
     .my-18 { margin-top: 4.5rem; margin-bottom: 4.5rem; }
     .my-19 { margin-top: 4.75rem; margin-bottom: 4.75rem; }
     .my-20 { margin-top: 5rem; margin-bottom: 5rem; }
+
+    .mb-16 { margin-bottom: 4rem; }
+
+    .m-auto { margin: auto; }
 // #endregion
 
 // #region Text utilities
-    .text-xs { font-size: 0.75rem; line-height: 1rem; }
-    .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
-    .text-base { font-size: 1rem; line-height: 1.5rem; }
-    .text-lg { font-size: 1.125rem; line-height: 1.75rem; }
-    .text-xl { font-size: 1.25rem; line-height: 1.75rem; }
-    .text-2xl { font-size: 1.5rem; line-height: 2rem; }
-    .text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
-    .text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
-    .text-5xl { font-size: 3rem; line-height: 1rem; }
-    .text-6xl { font-size: 3.75rem; line-height: 1rem; }
-    .text-7xl { font-size: 4.5rem; line-height: 1rem; }
-    .text-8xl { font-size: 6rem; line-height: 1rem; }
-    .text-9xl { font-size: 8rem; line-height: 1rem; }
+    .text-xs { font-size: 0.75rem; }
+    .text-sm { font-size: 0.875rem; }
+    .text-base { font-size: 1rem; }
+    .text-lg { font-size: 1.125rem; }
+    .text-xl { font-size: 1.25rem; }
+    .text-2xl { font-size: 1.5rem; }
+    .text-3xl { font-size: 1.875rem; }
+    .text-4xl { font-size: 2.25rem; }
+    .text-5xl { font-size: 3rem; }
+    .text-6xl { font-size: 3.75rem; }
+    .text-7xl { font-size: 4.5rem; }
+    .text-8xl { font-size: 6rem; }
+    .text-9xl { font-size: 8rem; }
+    .text-18xl { font-size: 19rem; }
 
     .bold { font-weight: bold; }
 
+    .outline-xxs {
+        color: #fff;
+        text-shadow: #000 0px 0px 3px,
+                     #0000009a 1px 8px 5px;
+                    
+
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .outline-xs {
+        color: #fff;
+        text-shadow: #000 0px 0px 3px, #000 0px 0px 3px,
+                     #0000009a 1px 8px 5px;
+                    
+
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .outline-sm {
+        color: #fff;
+        text-shadow: #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px,
+                     #0000009a 1px 8px 5px;
+                    
+
+        -webkit-font-smoothing: antialiased;
+    }
+    
     .outline {
+        color: #fff;
+        text-shadow: #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px,
+                     #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px,
+                     #0000009a 1px 8px 5px;
+                    
+
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .outline-xl {
         color: #fff;
         text-shadow: #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px,
                      #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px,
@@ -217,19 +292,26 @@
                     
 
         -webkit-font-smoothing: antialiased;
-
-
     }
+
+    .text-white { color: white; }
+
+    .text-center { text-align: center; }
+    .vertical-middle { vertical-align: middle; }
+    .vertical-bottom { vertical-align: top; }
 // #endregion
 
 //#region Background utilities
-
-
     .grey-bg { background-color: variables.$grey-bg; }
+    .kasa-bg { background-color: variables.$kasa-bg; }
 //#endregion
 
 //#region Miscellaneous 
-.rounded-sm {border-radius: 0.6rem;}
-.rounded {border-radius: 1rem;}
-.rounded-lg {border-radius: 1.5rem;}
+    .rounded-sm {border-radius: 0.6rem;}
+    .rounded {border-radius: 1rem;}
+    .rounded-lg {border-radius: 1.5rem;}
+    .rounded-xl {border-radius: 2rem;}
+    .cursor-pointer { cursor: pointer; }
+    .hide { display: none; }
+    .transition { transition: all .25s; }
 //#endregion

@@ -1,0 +1,11 @@
+.expand-container {
+  overflow: hidden;
+}
+
+.expand-contract {
+  margin-top: -100%;
+}
+
+.expand-contract.expanded {
+  margin-top: 0;
+}
