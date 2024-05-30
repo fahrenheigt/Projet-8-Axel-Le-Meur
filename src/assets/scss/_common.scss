@@ -8,6 +8,8 @@
     .w-70{ width: 70%; }
     .w-60{ width: 60%; }
     .w-50{ width: 50%; }
+    .w-48{ width: 48%; }
+    .w-45{ width: 45%; }
     .w-40{ width: 40%; }
     .w-30{ width: 30%; }
     .w-20{ width: 20%; }
@@ -202,6 +204,7 @@
     .mx-19 { margin-left: 4.75rem; margin-right:  4.75rem; }
     .mx-20 { margin-left: 5rem; margin-right:  5rem; }
 
+    .my-0 { margin-top: 0; margin-bottom: 0; }
     .my-1 { margin-top: 0.25rem; margin-bottom: 0.25rem; }
     .my-2 { margin-top: 0.5rem; margin-bottom: 0.5rem; }
     .my-3 { margin-top: 0.75rem; margin-bottom: 0.75rem; }
@@ -223,6 +226,8 @@
     .my-19 { margin-top: 4.75rem; margin-bottom: 4.75rem; }
     .my-20 { margin-top: 5rem; margin-bottom: 5rem; }
 
+    .mr-6 { margin-right: 1.5rem; }
+
     .mb-16 { margin-bottom: 4rem; }
 
     .m-auto { margin: auto; }
@@ -243,6 +248,12 @@
     .text-8xl { font-size: 6rem; }
     .text-9xl { font-size: 8rem; }
     .text-18xl { font-size: 19rem; }
+
+    .text-fontweight { font-weight: 600; }
+    .text-light { font-weight: 300; }
+    .text-semibold { font-weight: 500; }
+    .text-regular { font-weight: 400; }
+    .text-thin { font-weight: 100; }
 
     .bold { font-weight: bold; }
 
@@ -295,6 +306,7 @@
     }
 
     .text-white { color: white; }
+    .text-red { color: $kasa-bg; }
 
     .text-center { text-align: center; }
     .vertical-middle { vertical-align: middle; }
@@ -314,4 +326,8 @@
     .cursor-pointer { cursor: pointer; }
     .hide { display: none; }
     .transition { transition: all .25s; }
+    .block { display: block; }
+    .inline-block { display: inline-block; }
+
+    
 //#endregion

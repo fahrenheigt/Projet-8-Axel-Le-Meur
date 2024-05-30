@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import ArrowLeft from "../../assets/images/vector-left.svg";
+import ArrowRight from "../../assets/images/vector-right.svg";
 
 export default function Carousel({ carousel }) {
   const [state, setState] = useState({
@@ -43,9 +45,9 @@ export default function Carousel({ carousel }) {
 
   return (
     <div style={getImage()} className="flex space-between rounded-xl">
-        <div style={getLineHeight()} onClick={prev} className="text-18xl text-white px-8 self-center cursor-pointer h-full">&lsaquo;</div>
+        <div style={getLineHeight()} onClick={prev} className="text-18xl text-white px-8 self-center cursor-pointer h-full"><img className="left-arrow" src={ArrowLeft} alt="" /></div>
         <div className="grow text-white text-4xl text-center self-end py-5 bold">{state.currentImage}/{state.images.length}</div>
-        <div style={getLineHeight()} onClick={next} className="text-18xl text-white px-8 self-center cursor-pointer h-full">&rsaquo;</div>
+        <div style={getLineHeight()} onClick={next} className="text-18xl text-white px-8 self-center cursor-pointer h-full"><img className="right-arrow" src={ArrowRight} alt="" /></div>
     </div>
   )
 }

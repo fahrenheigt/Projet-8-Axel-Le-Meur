@@ -25,12 +25,12 @@ export default function Collapse({ title, content }) {
 
   return (
     <div>
-        <div className="flex space-between p-2 kasa-bg px-5 rounded-sm" onClick={toggle}>
-            <span className="grow text-white text-xl">{title}</span>
+        <div className="collapse-btn flex space-between p-2 kasa-bg px-5 rounded-sm" onClick={toggle}>
+            <span className="grow text-white text-xl bold">{title}</span>
             <img src={getArrow()} alt="" />
         </div>
-        <div className="expand-container">
-            <div className={getClass()}>
+        <div className="expand-container grey-bg">
+            <div className={"p-5 " + getClass()}>
                 {content}
             </div>
         </div>

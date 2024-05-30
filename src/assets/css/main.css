@@ -28,6 +28,14 @@
   width: 50%;
 }
 
+.w-48 {
+  width: 48%;
+}
+
+.w-45 {
+  width: 45%;
+}
+
 .w-40 {
   width: 40%;
 }
@@ -638,6 +646,11 @@
   margin-right: 5rem;
 }
 
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
@@ -738,6 +751,10 @@
   margin-bottom: 5rem;
 }
 
+.mr-6 {
+  margin-right: 1.5rem;
+}
+
 .mb-16 {
   margin-bottom: 4rem;
 }
@@ -802,6 +819,26 @@
   font-size: 19rem;
 }
 
+.text-fontweight {
+  font-weight: 600;
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+.text-semibold {
+  font-weight: 500;
+}
+
+.text-regular {
+  font-weight: 400;
+}
+
+.text-thin {
+  font-weight: 100;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -838,6 +875,10 @@
 
 .text-white {
   color: white;
+}
+
+.text-red {
+  color: #FF6060;
 }
 
 .text-center {
@@ -886,6 +927,14 @@
 
 .transition {
   transition: all 0.25s;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .home-bg {
@@ -976,6 +1025,11 @@
 
 .expand-contract.expanded {
   margin-top: 0;
+}
+
+.collapse-btn {
+  height: 4.2rem;
+  align-items: center;
 }
 
 .app {

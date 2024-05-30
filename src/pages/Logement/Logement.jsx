@@ -16,6 +16,18 @@ export default function Logement () {
         });
     })
 
+    function getArrayData(data) {
+        return (
+            <ul>
+                {
+                    data.map(element => {
+                        return (<li>{element}</li>)
+                    })
+                }
+            </ul>
+        )
+    }
+
     function getContent() {
         if(data.logement && data.logement !== null) {
             return (
@@ -23,11 +35,23 @@ export default function Logement () {
                     <div className="my-16">
                         <Carousel carousel={data.logement.pictures} />
                     </div>
-                    <h1>Logement n°{data.logement.id}</h1>
-                    <h2>{data.logement.title}</h2>
-                    <p>{data.logement.description}</p>
-                    <Collapse title="test" content={<Fragment>This is an <strong>HTML</strong> string.</Fragment>} />
-                    <a href="/">Retour</a>
+                    <h1 className='text-red text-6xl text-regular my-0'>{data.logement.title}</h1>
+                    <h2 className='my-3'>{data.logement.location}</h2>
+                    <div className="my-11">
+                        {
+                            data.logement.tags.map(tag => {
+                                return (<a className="px-5 py-2 kasa-bg text-white rounded-xl mr-6 bold">{tag}</a>)
+                            })
+                        }
+                    </div>
+                    <div className='flex space-between'>
+                        <div className="cursor-pointer w-48">
+                            <Collapse title="Description" content={<Fragment>{data.logement.description}</Fragment>} />
+                        </div>
+                        <div className="cursor-pointer w-48">
+                            <Collapse title="Équipements" content={<Fragment>{getArrayData(data.logement.equipments)}</Fragment>} />
+                        </div>
+                    </div>
                 </div>
             );
         }
